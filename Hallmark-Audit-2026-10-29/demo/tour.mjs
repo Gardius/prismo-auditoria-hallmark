@@ -1,0 +1,12 @@
+import {chromium} from 'playwright-core';
+import fs from 'node:fs/promises';
+const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']});
+const context=await browser.newContext({viewport:{width:1440,height:1000}});
+await context.route('**/*',r=>new URL(r.request().url()).hostname==='127.0.0.1'?r.continue():r.abort());
+const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+await page.goto('http://127.0.0.1:5190/__demo?role=OPERADOR',{waitUntil:'networkidle'});
+await page.waitForTimeout(1200);
+console.log((await page.locator('body').innerText()).slice(0,8500));console.log('errors',errors);
+await page.screenshot({path:'captures/01-operador-home.png',fullPage:true});
+await fs.writeFile('initial.json',JSON.stringify({errors,text:await page.locator('body').innerText()},null,2));
+await browser.close();

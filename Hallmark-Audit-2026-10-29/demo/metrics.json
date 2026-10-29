@@ -1,0 +1,88 @@
+[
+  {
+    "width": 1440,
+    "role": "CLIENTE",
+    "measure": {
+      "nav": [
+        {
+          "client": 198,
+          "scroll": 198
+        }
+      ],
+      "actions": [
+        {
+          "text": " Aprobar sin cambios",
+          "y": 986.453125,
+          "w": 230
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "role": "OPERADOR",
+    "measure": {
+      "nav": [
+        {
+          "client": 791,
+          "scroll": 791
+        }
+      ],
+      "actions": [
+        {
+          "text": "Preparar mensaje · 2 ",
+          "y": 642.28125,
+          "w": 175.921875
+        },
+        {
+          "text": "Preparar mensaje · 2 ",
+          "y": 943.84375,
+          "w": 175.921875
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "role": "CLIENTE",
+    "measure": {
+      "nav": [
+        {
+          "client": 360,
+          "scroll": 360
+        }
+      ],
+      "actions": [
+        {
+          "text": " Aprobar sin cambios",
+          "y": 1599.046875,
+          "w": 340
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "role": "OPERADOR",
+    "measure": {
+      "nav": [
+        {
+          "client": 360,
+          "scroll": 688
+        }
+      ],
+      "actions": [
+        {
+          "text": "Preparar mensaje · 2 ",
+          "y": 820.78125,
+          "w": 175.921875
+        },
+        {
+          "text": "Preparar mensaje · 2 ",
+          "y": 1271.125,
+          "w": 175.921875
+        }
+      ]
+    }
+  }
+]
